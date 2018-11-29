@@ -12,7 +12,7 @@ jQuery.noConflict();
 
 
     function setDropDown() {
-        // Retrieve field information, then set dropdown
+        // Retrieve field information, then set drop-down
         return kintone.api(kintone.api.url('/k/v1/preview/app/form/fields', true), 'GET',
             {'app': kintone.app.getId()}).then(function(resp) {
 
@@ -40,7 +40,7 @@ jQuery.noConflict();
         if (CONF.locale) {
             $('#select_locale').val(CONF.locale);
         }
-        // Set dropdown list
+        // Set drop-down list
         setDropDown();
         // Set input values when 'Save' button is clicked
         $('#check-plugin-submit').click(function() {
