@@ -28,7 +28,7 @@
     "en": "Date from now plug-in"
   },
   "description": {
-    "en": "This sample plugin converts the date into a new format in the selected locale. The new format is placed in the Record List instead of the original date format."
+    "en": "This sample plug-in converts the date into a '~minutes/hours/etc ago' format in the selected language. The new format is placed in the Record List instead of the original date format."
   },
   "homepage_url": {
     "en": "https://developer.kintone.io/hc/en-us/articles/115002348967"
