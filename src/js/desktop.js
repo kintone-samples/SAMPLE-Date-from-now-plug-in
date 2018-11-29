@@ -1,5 +1,5 @@
 /*
- * This sample plugin converts the date into a new format in the selected locale.
+ * This sample plug-in converts the date into a new format in the selected language.
  * The new format is placed in the Record List instead of the original date format.
  * Copyright (c) 2018 Cybozu
  *
@@ -8,7 +8,7 @@
 (function(PLUGIN_ID) {
     'use strict';
 
-    // Get plugin configuration settings
+    // Get plug-in configuration settings
     var CONFIG = kintone.plugin.app.getConfig(PLUGIN_ID);
     // Get each settings
     if (!CONFIG) {
@@ -17,12 +17,12 @@
     function capitalizeFirstLetter(string) {
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
-    moment.locale(CONFIG.locale);	//initialize the locale
-    var datetimefield = CONFIG.datetime_field;	//field code of a datetime field
+    moment.locale(CONFIG.locale);	// Initialize the locale
+    var datetimefield = CONFIG.datetime_field;	// Field code of a Datetime field
 
     // Set the Record List Event
     kintone.events.on('app.record.index.show', function(e) {
-        // Get the datetime fields in the record list
+        // Get the Datetime fields in the Record List
         var elements = kintone.app.getFieldElements(datetimefield);
 
         // Display text formatted by Moment.js instead of the initial dates
