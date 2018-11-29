@@ -1,5 +1,5 @@
 /*
- * This sample plug-in converts the date into a new format in the selected language.
+ * This sample plug-in converts the date into a '~minutes/hours/etc ago' format in the selected language.
  * The new format is placed in the Record List instead of the original date format.
  * Copyright (c) 2018 Cybozu
  *
